@@ -2,16 +2,15 @@
 grades = {"Amit": 85, "Riya": 92, "Karan": 78, "Neha": 88}
 
 # method1
-marks = []
+grades = {"Amit": 85, "Riya": 92, "Karan": 78, "Neha": 88}
+marks_list = []
 for student in grades:
     print(grades[student])
-    marks.append(grades[student])
-print(marks)
-print(max(marks))
-
-marks_max = max(marks)
+    marks_list.append(grades[student])
+print(marks_list)
+print(max(marks_list))
 for student in grades:
-    if (grades[student] == marks_max):
+    if (grades[student]) == max(marks_list):
         print(student)
 
 # method2:
